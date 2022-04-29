@@ -1,29 +1,44 @@
 # Credit Risk Analysis
-### Analysis Overview
-In this project, we use Python to build and evaluate several machine learning models to predict credit risk.
-We adopted the following procedure:
+## Overview:
+I have  used Python to build and evaluate several machine learning models to predict credit risk.
+I followed the steps below:
 
-oversample the data using the RandomOverSampler and SMOTE algorithms.
-Undersample the data using the ClusterCentroids algorithm.
-Use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm.
-Compare two machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier.
-We will evaluate the performance of these models and make a recommendation on whether they should be used to predict credit risk.
+1. Oversample the data using the **RandomOverSampler** and **SMOTE** algorithms.
+2. Undersample the data using the **ClusterCentroids** algorithm.
+3. Use a combinatorial approach of over- and undersampling using the **SMOTEENN** algorithm.
+4. Compare two machine learning models that reduce bias, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier**.
 
-### Resources
-LoanStats_2019Q1.csv
-Jupyter Notebook
+I am going to evaluate performance of these models and make recommendations based on whether they should be used to predict credit risk.
 
-### Results (Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports)
-**RandomOverSampler model**
-The balanced accuracy score is 65%.
+### Resources:
+* LoanStats_2019Q1.csv
+* Jupyter Notebook
+* Python
+
+## Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports:
+
+### RandomOverSampler model**
+
+![balance_accuracy_score](https://user-images.githubusercontent.com/96354508/165991147-d2162646-da39-4740-964c-3b025b14c034.png)
+
+![imbalance_classification_report](https://user-images.githubusercontent.com/96354508/165991185-9e2c83bd-6a2f-4af2-ad62-37b3d5ecf404.png)
+
+**Observations:**
+
+The balanced accuracy score is 64%.
 The high_risk precision is about 1% only with 62% sensitivity which makes a F1 of 2% only.
 Due to the high number of the low_risk population, its precision is almost 100% with a sensitivity of 68%.
 
 **SMOTE model**
 
+![smote_balance_accuracy](https://user-images.githubusercontent.com/96354508/165993021-a1c5c84b-ca0b-4a0e-9e00-8cc59834ed60.png)
+
+![smote_classification_report](https://user-images.githubusercontent.com/96354508/165993048-59cd84ca-f26d-454f-a174-e6f99fbf1d05.png)
+
+
 The results are pretty similar to the previous model.
-The balanced accuracy score is 64%.
-The high_risk precision is about 1% only with 63% sensitivity which makes a F1 of 2% only.
+The balanced accuracy score is 63%.
+The high_risk precision is 1% only with 62% sensitivity which makes a F1 of 2% only.
 Due to the high number of the low_risk population, its precision is almost 100% with a sensitivity of 66%.
 
 **ClusterCentroids model**
