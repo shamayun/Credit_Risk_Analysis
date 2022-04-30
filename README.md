@@ -88,5 +88,5 @@ I am going to evaluate performance of these models and make recommendations base
 * All the above models utilized to perform the credit risk analysis display weak precision in determining if a credit risk is high.
 * The Ensemble models brought a lot more accuracy on the sensitivity of the high risk credits.
 * The EasyEnsembleClassifier model shows a recall of 92% so it detects almost all high risk credit. With a low precision, a lot of low risk credits are still falsely detected as high risk, which would penalize the bank's credit strategy.
-* For those reasons I would not recommend the bank to use EasyEnsembleClassifier model among all models used.
+* I would recommend the bank to use EasyEnsembleClassifier model among all models used, because of improved accuracy.
 
