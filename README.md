@@ -15,7 +15,7 @@ I am going to evaluate performance of these models and make recommendations base
 * Jupyter Notebook
 * Python
 
-## Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports:
+## Results from Balanced Accuracy Scores, Confusion Matrixes and Imbalanced Classification Reports:
 
 ### RandomOverSampler model
 
@@ -81,6 +81,7 @@ I am going to evaluate performance of these models and make recommendations base
 
 ![easy_ensemble_classification_report](https://user-images.githubusercontent.com/96354508/166119475-14a5af3c-c551-4193-85df-d16211c08ce3.png)
 
+**Observations:**
 * The balanced accuracy score is high to ~93%.
 * The high_risk precision is still low at 7% with 91% sensitivity which makes a F1 of only 14%.
 * Due to a lower number of false positives, the low_risk sensitivity is now 94% with 100% presicion.
@@ -88,5 +89,6 @@ I am going to evaluate performance of these models and make recommendations base
 * All the above models utilized to perform the credit risk analysis display weak precision in determining if a credit risk is high.
 * The Ensemble models brought a lot more accuracy on the sensitivity of the high risk credits.
 * The EasyEnsembleClassifier model shows a recall of 92% so it detects almost all high risk credit. With a low precision, a lot of low risk credits are still falsely detected as high risk, which would penalize the bank's credit strategy.
-* I would recommend the bank to use EasyEnsembleClassifier model among all models used, because of improved accuracy.
+
+**Recommendation:** I would recommend the bank to use EasyEnsembleClassifier model among all models used, because of improved accuracy.
 
